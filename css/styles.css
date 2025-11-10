@@ -1037,12 +1037,26 @@ nav#filter li {
 .clickable-card {
   transition: background-color 0.3s, box-shadow 0.3s, color 0.3s;
   cursor: pointer;
-  color: inherit; /* normal text color before hover */
-  background-color: transparent; /* default */
+  color: #858585; /* match p text color */
+  background-color: transparent;
+  font-size: 15px; /* same as other experience text */
+  line-height: 22px; /* consistent line height */
+  padding: 10px 0; /* spacing for alignment */
+  border-radius: 6px; /* subtle rounded look */
+}
+
+.clickable-card h4 {
+  font-size: 20px; /* match other h4 headings */
+  margin: 4px 0px 2px;
+}
+
+.clickable-card span {
+  font-size: 14px; /* same as other date text */
+  color: #000;
 }
 
 .clickable-card:hover {
-  background-color: #ff6600; /* bright orange background */
-  color: white; /* make text white */
+  background-color: #ff6600; /* bright orange */
+  color: #fff; /* white text */
   box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
