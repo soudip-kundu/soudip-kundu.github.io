@@ -75,7 +75,7 @@
     <div class="section">
       <h3>Overview</h3>
       <p>
-        This project explores the nature of electronic correlations in systems undergoing a transition
+        The goal of the project is to explore the nature of the transition
         from a Fermi liquid to a Mott insulator, focusing on the emergence of the pseudogap regime
         at finite temperature. The study aims to understand how strong interactions and finite-temperature
         modify this transition.
@@ -96,22 +96,28 @@
       <h3>Methods and Tools</h3>
       <p>
         The analysis involves both analytical approaches and numerical simulations. Methods include
-        Unitary Renormalization group, spectral function analysis, and numerical solvers
-        for model Kondo Hamiltonians. The computational work is implemented primarily in <strong>Python</strong> .
+        Unitary Renormalization group. The results are benchmarked for confirmation.The computational work is implemented primarily in <strong>Python</strong> .
       </p>
     </div>
 <div class="section">
       <h3>Current Progress</h3>
       <p>I have built the framework to use the URG at finite temperature.
-        Exploring the Magnetic quenching by the Kondo cloud. Used the framework to study how the Kondo cloud is destroyed with increasing temperature. I have got promising  result and have benchmarked them with the well-established result in literature.
-      Now I am studying the thermodynamic properties like the heat capacity and susceptibility.
+        Exploring the properties of the Kondo model. Used the framework to study the spectral function of the Kondo model. Simulated how the central peak of the spectral function decreases with increasing temperature. I have got promising  result and have benchmarked them with the well-established result in literature.
+      Now I am studying the thermodynamic properties like the heat capacity and susceptibility.Some of the results are as follows 
       </p>
+  <div style="display: flex; gap: 20px; justify-content: center;">
+  <img src="images/kondo_reso.jpeg" width="45%" alt="Spectral function vs Temperature/T_k (where T_k is Kondo temperature)">
+  <img src="images/2_spin_rg_flow_magnetic.jpeg" width="45%" alt="Magnetic Susceptibility vs temperature">
+  <img src="T_chi.png" width="45%" alt="T*chi vs T/Tk">
+</div>
+</div>
     </div>
 
     <div class="section">
       <h3>Expected Outcomes</h3>
       <p>
-        We expect to understand the phase transition from the Fermi liquid to the Mott insulator through the pseudo gap phase at finite temperature.
+        We expect to understand the phase transition from the Fermi liquid to the Mott insulator through the pseudogap phase at finite temperature. This pseudogap phase could be the 
+        parent phase for other phases like superconductors and strange metals. Understanding this pseudogap phase will open the door and shed light on other phases.
         This technique may be used to study other phase transitions at finite temperature. This will open a new paradigm in the field of condensed matter
         to explore in the future.
       </p>
